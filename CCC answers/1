@@ -1,0 +1,16 @@
+
+games = int(input())
+t1 = [];
+t2 = [];
+t1 = input().split();
+t2 = input().split();
+out = 0;
+t1t=0
+t2t=0;
+for x in range(1,games+1):
+    t1t+=int(t1[x-1])
+    t2t+=int(t2[x-1])
+    if (t1t==t2t):
+        out = x
+
+print(out);
